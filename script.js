@@ -39,3 +39,22 @@ tl.from('#bar h4',{
         // Alternatively, you can use a shorthand method for yoyo effect
         // tl.to("#icon", { duration: 1, y: -20, ease: "power1.inOut", yoyo: true, repeat: -1 });
     };
+    const items = document.querySelectorAll('.item');
+    const wrapperWidth = document.querySelector('.wrapper').offsetWidth;
+
+    // Create a timeline
+    tl = gsap.timeline({ repeat: -1, repeatDelay: 1 }); // Infinite loop with a repeat delay of 1 second
+
+    // Define the animation
+    tl.to(items, {
+        x: `-=${wrapperWidth}`, // Move items to the left by the width of the wrapper
+        duration: 4, // Adjust duration to make it slower
+        ease: "linear", // Linear easing for constant speed
+        stagger: {
+            each: 0 // Stagger animation for each item
+        },
+        immediateRender: false // Prevent elements from immediately returning to their original positions
+    });
+
+    // Start the animation
+    tl.play();
