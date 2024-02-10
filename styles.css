@@ -565,7 +565,7 @@ border-radius: 12px;
     0% {transform: translateX(0);}
     100% {transform: translatex(-1000%)}
   }
-  @media screen and (max-width: 768px){
+  /* @media screen and (max-width: 768px){
   .nav{
     width: 100vw;
   }
@@ -582,7 +582,11 @@ border-radius: 12px;
     #bar{
         width: 500px;
         margin-left: 90px;
-        font-size: 20px;
+        font-size: 10px;
+        margin-top: 190px;
+    }
+    #content{
+        font-size: 25px;
     }
     #second{
         display: flex;
@@ -600,5 +604,177 @@ border-radius: 12px;
         flex-direction: column;
     }
   
-  }
+  } */
+  @media screen and(max-height:653px){
+    #icon{
+        font-size: 1rem;
+        padding-bottom: 2%;
+        height: 25vh;
+    }
+}
+
+
+ @media screen and (max-width: 768px) {
+    .nav1 {
+        display: none; /* Hide navigation links */
+    }
+    #btn1, #btn2 {
+        font-size: 12px; /* Adjust button font size */
+    }
+} 
+
+@media screen and (max-width: 576px) {
+    .nav h1 {
+        font-size: 24px; /* Adjust logo font size */
+    }
+    #btn1, #btn2 {
+        font-size: 10px; /* Further reduce button font size */
+    }
+}
+
+
+@media screen and (max-width: 909px){
+    #icon1{
+        display: inline-block;
+        margin-right: 5%;
+    }
+    .nav1{
+        display: none;
+    }
+   
+    #content{
+        font-size: 1.5rem;
+    }
+    #content1{
+        font-size: 0.85rem;
+    }
+    .nav{
+        width: 100%;
+        
+    }
+    #bar h4{
+        font-size: 1rem;
+    }
+    #card1, #card2, #card3{
+        height: 14.7rem;
+        width: 20rem;
+        line-height: 1.2rem;
+        padding-right: 2px;
+
+    }
+    #colo3{
+        height: 39px;
+        width: 367px;
+        top: 200px;
+    }
+    #card-content p{
+        font-size: 0.85rem;
+    }
+    #colo,#colo2{
+        height: 2.7rem;
+        width: 23.5rem;
+        
+    }
+    #card1 i,#card2 i,#card3 i{
+        font-size: 1.5rem;
+        margin-right:1rem ;
+    }
+    #card-content h1{
+        font-size: 1rem;
+    }
+    #crd{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+@media (max-width: 480px){
+    #content{
+        font-size: 1.1rem;
+    }
+    #content1{
+        font-size: 0.65rem;
+    }
+    nav{
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+    #btn1,#btn2{
+        display: none;
+    }
+    #bar h4{
+        font-size: 0.75rem;
+    }
+}
+
+@media screen and (max-width: 1266px){
+    .nav1 h3{
+        font-size: 1rem;
+
+    }
+    .nav{
+        padding-right: 15%;;
+    }
+
+}
+
+@media screen and (max-width: 720px) {
+    #bar{
+        padding-left: 5%;
+    }
+    #bar h4{
+        font-size: 0.72rem;
+        text-wrap: balance;
+        padding-right: 4px;
+    }
+}
+@media screen and (max-width:1340px) {
+    #img2{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 910px) {
+
+    #card3{
+        height: 22rem;
+        width: 24rem;
+        position: relative;
+        margin-left: 95px;
+        margin-top: -195px;
+    }
+    #colo3{
+        top: 218px;
+    }
+    #card2{
+        height: 22rem;
+        width: 24rem;
+    }
+    #card1{
+        height:22rem;
+        width: 24rem;
+    }
+    #card-content p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -59px;
+        text-wrap: balance;
+    }
+   #second{
+    display: flex;
+    flex-direction: column;
+   }
+   #colo{
+    margin-top: 222px;
+   }
+   #colo2{
+    margin-top: 65px;
+   }
+   #third{
+    height: 50vh;
+   }
+}
+
 
