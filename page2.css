@@ -17,6 +17,8 @@ nav{
     margin-top: -18px;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    padding-top: 10px;
 }
 
 label.logo1{
@@ -241,7 +243,6 @@ a.active,a:hover{
     height: 30px;
     transition: background-color 2s, color 2s;
 }
-
 #tbtn:hover{
     
         background-color: #e1ffff;
@@ -277,7 +278,7 @@ margin-top: 24px;
 }
 
 @media screen and (max-width: 980px){
-    #crd{
+    #game-card{
         display: flex;
         align-items: center;
         flex-wrap: wrap;
@@ -288,4 +289,65 @@ margin-top: 24px;
     .buttonclass{
         display: none;
     }
+}
+/* previous */
+#game-card {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 22px;
+}
+
+#gcard1 {
+    width: 350px;
+    height: 235px;
+    background-color: #2D2D2D;
+    border-radius: 12px;
+}
+
+#gimg{
+   position: absolute;
+    width: 350px;
+max-height: 236px;
+border-radius: 12px;
+    z-index: 0;
+}
+.gimg1 {
+    /* background-image: url("bgmi1.webp"); */
+    object-fit: cover;
+}
+
+.gimg2 {
+    background-image: url("ff.webp");
+    object-fit: cover;
+}
+
+.gimg3 {
+    background-image: url("valo.jpg");
+
+    object-fit: cover;
+}
+
+#bgmi,#free-fire,#valorant{
+    position: relative;
+    color: #E1FFFF;
+    background-color: #69B4FF;
+    border-radius: 13px;
+    border: none;
+    font-size: 16px;
+    margin-top: 182px;
+    margin-left: 5px;
+    width: 80px;
+    height: 30px;
+    font-weight: 540;
+    opacity:  85%;
+    z-index: 1;
+    /* filter: blur(1px); */
+}
+
+#game-card{
+    display: flex;
+    flex-wrap:wrap ;
 }

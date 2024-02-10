@@ -397,6 +397,10 @@ body {
     height: 30px;
     transition: background-color 2s, color 2s;
 }
+#tbtn a{
+    color: #E1FFFF;
+    text-decoration: none;
+}
 
 #tbtn:hover {
     background-color: #e1ffff;
